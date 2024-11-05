@@ -45,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
                     selectedFragment = new ListFragment();
                 } else if (item.getItemId() == R.id.nav_settings) {
                     selectedFragment = new SettingsFragment();
+                } else if (item.getItemId() == R.id.nav_home) { // Assuming there is a home menu item
+                    selectedFragment = new HomeFragment();
                 }
 
                 // Replace the fragment in the container
