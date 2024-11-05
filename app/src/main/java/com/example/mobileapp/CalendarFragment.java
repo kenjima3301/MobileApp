@@ -90,6 +90,15 @@ public class CalendarFragment extends Fragment {
         // Attach the adapter to the ListView
         eventListView.setAdapter(adapter);
 
+        // Set long click listener for deleting items
+        eventListView.setOnItemLongClickListener((parent, view1, position, id) -> {
+            // Remove the item from the list
+            eventList.remove(position);
+            // Notify the adapter that the data has changed to refresh the ListView
+            adapter.notifyDataSetChanged();
+            return true;
+        });
+
         return view;
     }
 }
