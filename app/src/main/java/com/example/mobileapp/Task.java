@@ -1,84 +1,100 @@
-package com.example.lab03;
+package com.example.mobileapp;
+
+import java.sql.Date;
+import java.sql.Time;
 
 public class Task {
-    private int maSV;
-    private String hoTen;
-    private String ngaySinh;
-    private String gioiTinh;
-    private String lop;
-    private String khoa;
+    private int taskId;
+    private int userId;
+    private String name;
+    private String type;
+    private String priority;
+    private String status;
+    private Date date;
+    private Time time;
+    private String repeat_frequency;
+    private String description;
 
     public Task() {
     }
 
-    public Task(String hoTen, String ngaySinh, String gioiTinh) {
-        this.hoTen = hoTen;
-        this.ngaySinh = ngaySinh;
-        this.gioiTinh = gioiTinh;
+    public int getTaskId() {
+        return taskId;
     }
 
-    public Task(String hoTen, String ngaySinh, String gioiTinh, String lop, String khoa) {
-        this.hoTen = hoTen;
-        this.ngaySinh = ngaySinh;
-        this.gioiTinh = gioiTinh;
-        this.lop = lop;
-        this.khoa = khoa;
+    public void setTaskId(int taskId) {
+        this.taskId = taskId;
     }
 
-    public Task(int maSV, String hoTen, String ngaySinh, String gioiTinh, String lop, String khoa) {
-        this.maSV = maSV;
-        this.hoTen = hoTen;
-        this.ngaySinh = ngaySinh;
-        this.gioiTinh = gioiTinh;
-        this.lop = lop;
-        this.khoa = khoa;
+    public int getUserId() {
+        return userId;
     }
 
-    public int getMaSV() {
-        return maSV;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
-    public void setMaSV(int maSV) {
-        this.maSV = maSV;
+    public String getName() {
+        return name;
     }
 
-    public String getHoTen() {
-        return hoTen;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setHoTen(String hoTen) {
-        this.hoTen = hoTen;
+    public String getType() {
+        return type;
     }
 
-    public String getNgaySinh() {
-        return ngaySinh;
+    public void setType(String type) {
+        this.type = type;
     }
 
-    public void setNgaySinh(String ngaySinh) {
-        this.ngaySinh = ngaySinh;
+    public String getPriority() {
+        return priority;
     }
 
-    public String getGioiTinh() {
-        return gioiTinh;
+    public void setPriority(String priority) {
+        this.priority = priority;
     }
 
-    public void setGioiTinh(String gioiTinh) {
-        this.gioiTinh = gioiTinh;
+    public String getStatus() {
+        return status;
     }
 
-    public String getLop() {
-        return lop;
+    public void setStatus(String status) {
+        this.status = status;
     }
 
-    public void setLop(String lop) {
-        this.lop = lop;
+    public Date getDate() {
+        return date;
     }
 
-    public String getKhoa() {
-        return khoa;
+    public void setDate(Date date) {
+        this.date = date;
     }
 
-    public void setKhoa(String khoa) {
-        this.khoa = khoa;
+    public Time getTime() {
+        return time;
+    }
+
+    public void setTime(Time time) {
+        this.time = time;
+    }
+
+    public String getRepeat_frequency() {
+        return repeat_frequency;
+    }
+
+    public void setRepeat_frequency(String repeat_frequency) {
+        this.repeat_frequency = repeat_frequency;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
