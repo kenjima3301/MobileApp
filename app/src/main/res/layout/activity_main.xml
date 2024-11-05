@@ -28,4 +28,15 @@
         app:labelVisibilityMode="unlabeled"
         app:itemTextColor="@color/blue" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/icon_add"
+        app:layout_constraintBottom_toTopOf="@id/view_bottom_navigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:backgroundTint="@color/blue" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
