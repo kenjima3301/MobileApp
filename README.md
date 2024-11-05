@@ -1,4 +1,5 @@
 ## Quy tắc làm việc trên Github
+- Chỉ commit khi đã hoàn thành một tính năng nào đó, không commit khi code còn lỗi
 - Chỉ commit code trên nhánh cá nhân, **không** trực tiếp commit lên master (đã cài protection rule)
 - **Trước khi code trên nhánh cá nhân**: Pull code từ master về (chú ý thư mục Java và file main_activity.xml vì mọi người cùng thao tác trên đây dễ gây conflict
 - **Khi muốn code được merge vào master**: Tạo pull request -> Nhờ ít nhất 1 bạn trong team review
